@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'utils/firebase_options.dart';
 import 'package:tubes_iot/Pages/Homepage.dart';
 
-void main() {
-  runApp(Alarmgas());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const Alarmgas());
 }
 
 class Alarmgas extends StatelessWidget {
@@ -17,7 +23,7 @@ class Alarmgas extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

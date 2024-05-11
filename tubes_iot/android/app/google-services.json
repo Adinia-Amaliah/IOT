@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "268038540045",
+    "firebase_url": "https://iot-project-7d585-default-rtdb.firebaseio.com",
+    "project_id": "iot-project-7d585",
+    "storage_bucket": "iot-project-7d585.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268038540045:android:abbc76940b4fb9d8407e44",
+        "android_client_info": {
+          "package_name": "com.example.tubes_iot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVvo1MtWT-3bNivJleeoiKf6vlS3IYKSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
