@@ -29,7 +29,7 @@ class RiwayatPage extends StatelessWidget {
                   },
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 8), 
+                  padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
                     title,
                     style: TextStyle(
@@ -40,7 +40,7 @@ class RiwayatPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 20), 
+            SizedBox(height: 20),
             Column(
               children: [
                 Icon(
@@ -48,7 +48,7 @@ class RiwayatPage extends StatelessWidget {
                   color: Colors.red,
                   size: 48,
                 ),
-                SizedBox(height: 8), 
+                SizedBox(height: 8),
                 Text(
                   'Indikator Peringatan',
                   style: TextStyle(
@@ -59,10 +59,9 @@ class RiwayatPage extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 22), 
+            SizedBox(height: 22),
             GestureDetector(
-              onTap: () {
-              },
+              onTap: () {},
               child: Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -83,7 +82,7 @@ class RiwayatPage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Kebocoran gas tereteksi!',
+                            'Kebocoran gas terdeteksi!',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
@@ -94,8 +93,11 @@ class RiwayatPage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const DetailPage(title: '',)),
-                                );
+                                MaterialPageRoute(
+                                    builder: (context) => const DetailPage(
+                                          title: '',
+                                        )),
+                              );
                             },
                             child: Text('Detail'),
                           ),
@@ -124,8 +126,11 @@ class RiwayatPage extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const DetailPage1(title: '',)),
-                                );
+                                MaterialPageRoute(
+                                    builder: (context) => const DetailPage1(
+                                          title: '',
+                                        )),
+                              );
                             },
                             child: Text('Detail'),
                           ),
@@ -136,12 +141,12 @@ class RiwayatPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20), 
+            SizedBox(height: 20),
             Image.asset(
-              'assets/images/Toxic.png', 
-              width: 200, 
-              height: 200, 
-              fit: BoxFit.contain, 
+              'assets/images/Toxic.png',
+              width: 200,
+              height: 200,
+              fit: BoxFit.contain,
             ),
           ],
         ),

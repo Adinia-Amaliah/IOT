@@ -48,7 +48,10 @@ class HomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const GasPage(title: '',)),
+                    MaterialPageRoute(
+                        builder: (context) => const GasPage(
+                              title: '',
+                            )),
                   );
                 },
                 child: const Text('Masuk'),
